@@ -35,7 +35,7 @@ class Event:
                          moment.shot_clock)
             clock_info.set_text(clock_test)
         ball_circle.center = moment.ball.x, moment.ball.y
-        ball_circle.radius = moment.ball.radius / Constant.NORMALISATION_COEF
+        ball_circle.radius = moment.ball.radius / Constant.NORMALIZATION_COEF
         return player_circles, ball_circle
 
     def show(self):

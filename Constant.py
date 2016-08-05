@@ -1,8 +1,8 @@
 class Constant:
     """A class for handling constants"""
-    NORMALISATION_COEF = 7
-    PLAYER_CIRCLE_SIZE = 12 / NORMALISATION_COEF
-    INTERVAL = 80
+    NORMALIZATION_COEF = 7
+    PLAYER_CIRCLE_SIZE = 12 / NORMALIZATION_COEF
+    INTERVAL = 10
     DIFF = 6
     X_MIN = 0
     X_MAX = 100
