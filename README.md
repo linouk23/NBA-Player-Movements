@@ -1,6 +1,6 @@
 # NBA Player Movements
 
-This is a script for visualization NBA games from raw SportVU logs.
+This is a script for visualization of NBA games from raw SportVU logs.
 
 If you admire both Spurs' and Warriors' ball movement, Brad Stevens' playbook, or just miss KD in OKC you'll find this entertaining.
 
@@ -15,22 +15,25 @@ If you admire both Spurs' and Warriors' ball movement, Brad Stevens' playbook, o
 
 1. Choose any NBA game and download corresponding raw SportVU game logs (.json file) from [this repo](https://github.com/neilmj/BasketballData/tree/master/2016.NBA.Raw.SportVU.Game.Logs "Game logs").
 2. Clone this repo:
-```bash
-$ git clone https://github.com/linouk23/NBA-Player-Movements
-```
+
+  ```bash
+  $ git clone https://github.com/linouk23/NBA-Player-Movements
+  ```
+
 3. Generate an animation for the play by running the following script:
 
-```bash
-$ python3 main.py --path=Celtics@Lakers.json --event=140
-```
+  ```bash
+  $ python3 main.py --path=Celtics@Lakers.json --event=140
+  ```
 
-```
-required named arguments:
-  --path PATH    a path to json file to read events from
+  ```
+  required arguments:
+    --path PATH    a path to json file to read the events from
 
-optional arguments:
-  --event EVENT  an index of the event to create animation to (the indexing
-                 start with zero, if you index goes beyond out the total
-                 number of events (plays), we will show you the last one of
-                 the game)
-```
+  optional arguments:
+    --event EVENT  an index of the event to create the animation to
+                   (the indexing start with zero, if you index goes beyond out
+                   the total number of events (plays), it will show you the last
+                   one of the game)
+    -h, --help     show the help message and exit
+  ```
