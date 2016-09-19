@@ -13,12 +13,13 @@ If you admire both Spurs' and Warriors' ball movement, Brad Stevens' playbook, o
 
 ## Usage
 
-1. Choose any NBA game and download corresponding raw SportVU game logs (.json file) from [this repo](https://github.com/neilmj/BasketballData/tree/master/2016.NBA.Raw.SportVU.Game.Logs "Game logs").
-2. Clone this repo:
+1. Clone this repo:
 
   ```bash
   $ git clone https://github.com/linouk23/NBA-Player-Movements
   ```
+
+2. Choose any NBA game from ```data/2016.NBA.Raw.SportVU.Game.Logs``` directory.
 
 3. Generate an animation for the play by running the following script:
 
