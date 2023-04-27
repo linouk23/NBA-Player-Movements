@@ -81,8 +81,7 @@ class Event:
                               fontsize=Constant.FONTSIZE,
                               cellLoc='center')
         table.scale(1, Constant.SCALE)
-        table_cells = table.properties()['child_artists']
-        for cell in table_cells:
+        for cell in table.get_celld().values():
             cell._text.set_color('white')
 
         player_circles = [plt.Circle((0, 0), Constant.PLAYER_CIRCLE_SIZE, color=player.color)
